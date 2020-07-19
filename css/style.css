@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
 /* Utility Classes */
 .flex{
     display: flex;
@@ -248,7 +252,7 @@ section.top-products{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 .section-heading::after{
@@ -394,5 +398,217 @@ hr{
     position: absolute;
     bottom: -20px;
     z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+section.about-meal img{
+    width: 85%;
+}
+
+.flex1{
+    flex: 1;
+}
+
+section.about-meal h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+section.about-meal p{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 4rem;
+}
+
+section.our-services{
+    background: var(--light);
+    z-index: 0;
+    position: relative;
+}
+
+.our-services .service-card{
+    background: var(--heaven);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    padding-top: 4rem;
+    border-radius: 4px;
+    margin-right: 2rem;
+}
+
+.our-services .card-wrapper{
+    margin-right: -2rem;
+    margin-top: 8rem;
+}
+
+.our-services .service-card .icon{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.our-services .service-card h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+
+.our-services .service-card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.text-primary{
+    color: var(--primary);
+}
+
+.text-pure{
+    color: var(--pure);
+}
+
+
+/*  */
+section.big-deal{
+    background: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+    ), url(/media/images/food-table.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.big-deal .timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+}
+
+section.big-deal .timer div{
+    margin-right: 2rem;
+    background: var(--primary);
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.big-deal .timer div span:first-child{
+    font-size: 2.5rem;
+    color: var(--heaven);
+    margin-bottom: 0.05rem;
+}
+
+section.big-deal .timer div span:last-child{
+    color: var(--heaven);
+}
+
+/* latest Blog */
+
+section.latest-news{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+}
+.latest-news .article-wrapper {
+    margin-right: -2rem;
+}
+
+.latest-news .article-wrapper .card{
+    margin-right: 2rem;
+    background: var(--heaven);
+    border-radius: 4px;
+}
+
+.latest-news .article-wrapper .card img{
+    width: 100%;
+}
+
+.latest-news .article-wrapper .card .card-content{
+    padding: 2rem;
+}
+
+.latest-news .article-wrapper .card .card-content .post-meta{
+    margin-bottom: 1rem;
+}
+
+.card .card-content .post-meta .comment-count{
+    margin-left: 1rem;
+}
+
+.card .card-content h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.card .card-content p{
+    line-height: 1.6;
+}
+
+.btn-wrapper{
+    margin-top: 2rem;
+}
+
+/* Subscribe */
+
+section.subscribe{
+    background: var(--primary);
+}
+
+section.subscribe .container img{
+    width: 90%;
+}
+
+section.subscribe h1{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+section.subscribe p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.subscribe .input-wrap{
+    background: var(--heaven);
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+.subscribe .input-wrap input{
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+} 
+
+.subscribe .input-wrap button{
+    border: none;
+    padding: 0.8rem 2rem;
+    color: var(--pure);
+    background: var(--primary);
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .3s ease;
+} 
+
+.subscribe .input-wrap button:hover{
+    background: var(--secondary);
+}
+
 
